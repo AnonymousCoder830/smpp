@@ -102,5 +102,7 @@ let splashtexts = [
 function get_splash_text() {
     return splashtexts[Math.floor(Math.random() * splashtexts.length)]
 }
-
+if (window.location.href.split('/')[3]=="login"){
+    add_splash_text()
+}
 
